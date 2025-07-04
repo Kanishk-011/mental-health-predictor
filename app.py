@@ -86,6 +86,7 @@ def load_models():
         
         # Load Neural Network model
         nn_model = keras.models.load_model('models/nn_model.h5')
+
         
         return rf_model, scaler, label_encoders, nn_model
     except Exception as e:
